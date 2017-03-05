@@ -4,12 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-  <style media="screen">
-    .carsoul-item{
-      float: left;
-    }
-  </style>
+  <title>jQuery slide</title>
 </head>
 <body>
   <div class="keke">
@@ -18,27 +13,27 @@
     <img src="images/3.jpg">
     <img src="images/4.jpg">
   </div>
-  <div class="coco">
+  <!-- <div class="coco">
     <img src="images/1.jpg">
     <img src="images/2.jpg">
     <img src="images/3.jpg">
     <img src="images/4.jpg">
-  </div>
+  </div> -->
   <script src="https://cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
   <script src="js/Slide.js" charset="utf-8"></script>
   <script type="text/javascript">
     $('.keke').slides({
-        width: 400,
-        height: 300,
+        width: 480,
+        height: 360,
         auto: 4000,
         duration: 800
     })
-    $('.coco').slides({
-        width: 600,
-        height: 450,
-        auto: 3000,
-        duration: 1000
-    })
+    // $('.coco').slides({
+    //     width: 600,
+    //     height: 450,
+    //     auto: 3000,
+    //     duration: 1000
+    // })
   </script>
 </body>
 </html>

@@ -9,7 +9,6 @@
         this.init();
 
     }
-    // 准备好HTML
     Slide.prototype.init = function() {
         this.prepareHTML();
         this.bindEvent();
@@ -34,26 +33,35 @@
         })
         var $viewpoint = $wrap.parent().css({
             overflow: 'hidden',
+            position:'relative',
             width: options.width
         })
         this.$viewpoint = $viewpoint
-        var $pre = this.$pre = $('<button><</button>').appendTo($art).css({
+        var $pre = this.$pre = $('<button><</button>').appendTo($viewpoint).css({
             'border-radius': '50%',
             'border': 'none',
             'color': '#fff',
             'background': 'rgba(51,110,136,1)',
             'padding': '2px',
-            'width': 20,
-            'height': 20
+            'width': 30,
+            'height': 30,
+            'position':'absolute',
+            'left':0,
+            'top':'50%',
+            'margin-top':-15
         })
-        var $next = this.$next = $('<button>></button>').appendTo($art).css({
+        var $next = this.$next = $('<button>></button>').appendTo($viewpoint).css({
             'border-radius': '50%',
             'border': 'none',
             'color': '#fff',
             'background': 'rgba(51,110,136,1)',
             'padding': '2px',
-            'width': 20,
-            'height': 20
+            'width': 30,
+            'height': 30,
+            'position':'absolute',
+            'right':0,
+            'top':'50%',
+            'margin-top':-15
         })
 
     }
